@@ -1,0 +1,113 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Leadership USDT</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{--ice:#8fdcff;--mut:#7f90ba;--gold:#ffcf5a;--tx:#eaf1ff}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{background:radial-gradient(120% 55% at 50% -10%,#123076,#04070f 62%) fixed;color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:14px 14px calc(104px + env(safe-area-inset-bottom));min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;left:-60%;right:-60%;bottom:0;height:46vh;background:linear-gradient(#2e7bff30 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,#2e7bff30 1px,transparent 1px) 0 0/44px 44px;transform:perspective(320px) rotateX(64deg);transform-origin:bottom;-webkit-mask-image:linear-gradient(transparent,#000);mask-image:linear-gradient(transparent,#000);z-index:-1;pointer-events:none}
+.card{position:relative;background:linear-gradient(155deg,#13214a,#0a1229 70%);border:1px solid #23387a;border-radius:22px;padding:16px;margin-bottom:16px;box-shadow:inset 0 1px 0 #5576d655,inset 0 -4px 0 #050a1c,0 6px 0 #070e26,0 18px 30px #000b}
+.sm{color:var(--mut);font-size:13px}.num{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.5px;text-shadow:0 3px 0 #0a1b4d}
+h3{font-size:16px;margin-bottom:10px}
+.hero{text-align:center;transform:perspective(900px) rotateX(3deg);transform-origin:50% 100%;background:linear-gradient(155deg,#1c3f9a,#0b1535 72%);border-color:#3b66d8}
+.hero .num{font-size:38px;margin:2px 0 14px;color:var(--ice);text-shadow:0 0 22px #2e7bffaa,0 4px 0 #0a1b4d}
+.coin{width:84px;height:84px;margin:0 auto 10px;position:relative;transform-style:preserve-3d;animation:spin 5s linear infinite}
+.coin i{position:absolute;inset:0;border-radius:50%;display:grid;place-items:center;font:800 38px system-ui;color:#7a5200;font-style:normal;background:radial-gradient(circle at 30% 25%,#fff3b0,#ffcf5a 45%,#c98a14);box-shadow:inset 0 0 0 5px #e6a928,inset 0 0 0 7px #ffe08a,0 10px 30px #ffb70066;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.coin i:nth-child(2){transform:rotateY(180deg)}
+@keyframes spin{to{transform:rotateY(360deg)}}
+.prz{display:grid;grid-template-columns:1.2fr 1.2fr 1fr;gap:8px}
+.prz div{background:linear-gradient(#101c44,#07102b);border:1px solid #243a80;border-radius:14px;padding:10px 2px;font-size:12px;color:var(--mut);box-shadow:inset 0 1px 0 #4a6bd044,0 4px 0 #050b20}
+.prz b{display:block;font-size:17px;color:var(--gold);margin-top:2px}.prz div:nth-child(3) b{color:var(--tx)}
+.boost{margin:-4px 0 16px;padding:12px;border-radius:16px;text-align:center;font-weight:800;color:#3a2600;background:linear-gradient(#ffe08a,#ffb62e);box-shadow:inset 0 1px 0 #fff9,0 5px 0 #a8690a,0 12px 24px #ffb62e55}
+.me{display:flex;justify-content:space-between;align-items:center}.me>div:last-child{text-align:right}
+.row{display:flex;align-items:center;gap:10px;padding:9px 6px;border-bottom:1px solid #111c3b;border-radius:12px}.row:last-child{border:0}
+.rk{width:28px;text-align:center;font-weight:800;color:var(--mut);font-size:17px}
+.t0{background:linear-gradient(90deg,#ffcf5a28,transparent)}.t1{background:linear-gradient(90deg,#cfd8ee22,transparent)}.t2{background:linear-gradient(90deg,#d9955c22,transparent)}
+.av{width:38px;height:38px;border-radius:50%;background:linear-gradient(#4b93ff,#1f56d6);display:grid;place-items:center;font-weight:800;overflow:hidden;flex:none;box-shadow:0 0 0 2px #2e7bff,0 5px 10px #000a}.av img{width:100%;height:100%;object-fit:cover}
+.nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nm i{display:block;font-style:normal;color:var(--mut);font-size:12px}
+button{font:inherit;font-weight:800;border:0;border-radius:14px;padding:12px 16px;color:#fff;cursor:pointer;background:linear-gradient(#4b93ff,#2563e0);box-shadow:inset 0 1px 0 #ffffff66,0 5px 0 #153a8c,0 10px 18px #1d4fd655;transition:transform .08s,box-shadow .08s}
+button:active{transform:translateY(4px);box-shadow:inset 0 1px 0 #ffffff66,0 1px 0 #153a8c,0 3px 8px #1d4fd655}
+button:disabled{background:linear-gradient(#1b2a5c,#141f47);color:var(--mut);box-shadow:0 4px 0 #0a1233;cursor:default}button:disabled:active{transform:none}
+button.g{background:linear-gradient(#1c2f6b,#12214d);color:var(--ice);box-shadow:inset 0 1px 0 #5576d655,0 5px 0 #0a1538}.w{width:100%}
+input{width:100%;font:inherit;color:var(--tx);background:#060c1c;border:1px solid #23387a;border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:inset 0 3px 6px #000a}
+.flex{display:flex;gap:10px}.flex>*{flex:1}
+.link{background:#060c1c;border:1px dashed #2a4390;border-radius:12px;padding:10px;font-size:12px;word-break:break-all;margin-bottom:12px;color:var(--ice);box-shadow:inset 0 3px 6px #000a}
+.bar{height:12px;border-radius:9px;background:#060c1c;box-shadow:inset 0 2px 5px #000;margin:12px 0 6px;overflow:hidden}.bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#2e7bff,#8fdcff);box-shadow:0 0 12px #2e7bff}
+[hidden]{display:none!important}
+nav{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));display:flex;gap:6px;padding:6px;background:linear-gradient(#111d45,#0a1230);border:1px solid #27408f;border-radius:22px;box-shadow:inset 0 1px 0 #5576d655,0 6px 0 #050a1e,0 16px 30px #000c;z-index:5}
+nav button{flex:1;background:none;box-shadow:none;color:var(--mut);font-size:19px;padding:8px 4px;border-radius:16px;line-height:1.2}nav button span{display:block;font-size:12px}
+nav button.on{color:#fff;background:linear-gradient(#3b86ff,#1f56d6);box-shadow:inset 0 1px 0 #fff5,0 3px 0 #123a99}nav button:active{transform:none}
+#toast{position:fixed;left:50%;top:14px;transform:translateX(-50%) translateY(-20px);background:linear-gradient(#3b86ff,#1f56d6);padding:11px 20px;border-radius:14px;font-weight:800;opacity:0;transition:.25s;pointer-events:none;z-index:9;box-shadow:0 5px 0 #123a99,0 14px 24px #000a;max-width:90%;text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%)}#toast.bad{background:linear-gradient(#e0485a,#b32638);box-shadow:0 5px 0 #7d1220,0 14px 24px #000a}
+a{color:var(--ice)}ul{padding-left:18px}li{margin-bottom:6px}
+@media(prefers-reduced-motion:reduce){.coin{animation:none}*{transition:none!important}}
+</style></head><body>
+<div id="app"><div class="card sm">Loading…</div></div><div id="toast"></div>
+<nav id="nav" hidden><button data-t="home">🏆<span>Board</span></button><button data-t="earn">⚡<span>Earn</span></button><button data-t="win">💰<span>Winners</span></button></nav>
+<script>
+const W=Telegram.WebApp;W.ready();W.expand();try{W.setHeaderColor('#04070f');W.setBackgroundColor('#04070f')}catch(e){}
+const $=q=>document.querySelector(q),fmt=n=>(+n).toLocaleString('en-US'),esc=t=>String(t==null?'':t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let S,LB=[],WN=null,FR=null,tab='home',T={},ZL=0;
+const api=async(a,x={})=>{const r=await fetch('/api/app',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({a,initData:W.initData,...x})}),t=await r.text();let j;try{j=JSON.parse(t)}catch(e){throw 'Server error. Check the Vercel environment variables and redeploy.'}if(j.error)throw j.error;return j};
+const toast=(m,ok=1)=>{const t=$('#toast');t.textContent=m;t.className='on'+(ok?'':' bad');clearTimeout(toast.h);toast.h=setTimeout(()=>t.className='',2400);try{W.HapticFeedback.notificationOccurred(ok?'success':'error')}catch(e){}};
+const cd=ms=>{ms=Math.max(0,ms);const d=ms/864e5|0,h=ms%864e5/36e5|0,m=ms%36e5/6e4|0,s=ms%6e4/1e3|0;return(d?d+'d ':'')+h+'h '+m+'m '+s+'s'};
+const av=p=>`<div class="av">${p.photo?`<img src="${esc(p.photo)}" onerror="this.remove()">`:esc((p.name||'?')[0])}</div>`;
+const go=u=>/^https:\/\/t\.me\//.test(u)?W.openTelegramLink(u):W.openLink(u);
+
+async function load(){
+  try{S=await api('me')}catch(e){$('#nav').hidden=true;$('#app').innerHTML=`<div class="card">${esc(e)}<br><br><button class="w" onclick="load()">Try again</button></div>`;return}
+  if(S.gate){$('#nav').hidden=true;$('#app').innerHTML=`<div class="card hero"><div class="coin"><i>₮</i><i>₮</i></div><div class="num" style="font-size:26px;color:var(--tx)">Join to unlock</div><p class="sm" style="margin:8px 0 16px">Join both channels, then tap Verify.</p>${S.gate.map(c=>`<button class="g w" style="margin-bottom:12px" onclick="W.openTelegramLink('https://t.me/${esc(c.slice(1))}')">Join ${esc(c)}</button>`).join('')}<button class="w" onclick="load()">Verify</button></div>`;return}
+  $('#nav').hidden=false;
+  if(S.cfg.zone&&!ZL){ZL=1;const s=document.createElement('script');s.src='//libtl.com/sdk.js';s.dataset.zone=S.cfg.zone;s.dataset.sdk='show_'+S.cfg.zone;document.head.appendChild(s)}
+  try{if(!localStorage.w){localStorage.w=1;W.requestWriteAccess&&W.requestWriteAccess()}}catch(e){}
+  draw();
+}
+async function lb(){try{LB=(await(await fetch('/api/app')).json()).top||[];if(tab==='home')draw()}catch(e){}}
+async function loadWin(){try{WN=(await(await fetch('/api/app?w=1')).json()).rounds||[]}catch(e){WN=[]}if(tab==='win')draw()}
+function draw(){
+  if(!S||S.gate)return;
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
+  const R=S.R,P=R.prize,off=!R.active,c=S.cfg;
+  let h=`<div class="card hero"><div class="coin"><i>₮</i><i>₮</i></div><div class="sm">Round ${off?R.n+1:R.n} ${off?'starts in':'ends in'}</div><div class="num" id="cd"></div><div class="prz"><div>🥇 1st<b>${P[0]} USDT</b></div><div>🥈 2nd<b>${P[1]} USDT</b></div><div>3rd to 10th<b>${c.top} each</b></div></div></div>`;
+  if(S.boost)h+=`<div class="boost">⚡ ${c.bx}x points are live. Final hours, earn now!</div>`;
+  if(tab==='home')h+=`<div class="card me"><div><div class="sm">Your rank</div><div class="num">${S.rank?'#'+S.rank:'–'}</div></div><div><div class="sm">Your points</div><div class="num">${fmt(S.pts)}</div></div></div><div class="card"><h3>Top 100</h3>${LB.length?LB.map((p,i)=>`<div class="row ${i<3?'t'+i:''}"><span class="rk">${['🥇','🥈','🥉'][i]||i+1}</span>${av(p)}<span class="nm">${esc(p.name)}<i>${p.un?'@'+esc(p.un):''}</i></span><b>${fmt(p.pts)}</b></div>`).join(''):'<p class="sm">No scores yet. Be the first on the board.</p>'}</div>`;
+  else if(tab==='earn'){
+    const ms=Object.entries(c.ms).map(([k,v])=>[+k,v]).sort((a,b)=>a[0]-b[0]),nx=ms.find(m=>m[0]>S.inv);
+    h+=`${off?'<div class="card sm">Earning is paused until the next round starts.</div>':''}
+<div class="card"><h3>Daily check-in</h3><p class="sm">Streak: ${S.streak} day${S.streak==1?'':'s'}. Check in every day for a bigger bonus.</p><br><button class="w" onclick="checkin()" ${off||S.ci?'disabled':''}>${S.ci?'Checked in today':'Check in (+'+c.ci+' or more)'}</button></div>
+<div class="card"><h3>Invite friends: +${c.inv} each</h3><div class="link">${esc(S.link)}</div><div class="flex"><button onclick="navigator.clipboard.writeText(S.link).then(()=>toast('Link copied'))">Copy</button><button class="g" onclick="W.openTelegramLink('https://t.me/share/url?url='+encodeURIComponent(S.link)+'&text='+encodeURIComponent('Win real USDT every round on Leadership USDT 💎'))">Share</button></div>
+<div class="bar"><i style="width:${nx?Math.min(100,S.inv/nx[0]*100):100}%"></i></div><p class="sm">${nx?`${nx[0]-S.inv} more invites for a +${fmt(nx[1])} bonus`:'All invite milestones reached!'}</p><p class="sm" style="margin-top:8px">${S.inv} joined this round · <a onclick="friends()">View friends</a></p><div>${FR?FR.map(f=>`<div class="row"><span class="nm">${esc(f.name)}</span><span class="sm">${f.ver?'Verified +'+f.pts:'Pending'}</span></div>`).join('')||'<p class="sm">No invites yet.</p>':''}</div></div>
+<div class="card"><h3>Watch ad: +${c.ad}</h3><button class="w" onclick="ad()" ${off||!S.adsLeft?'disabled':''}>${S.adsLeft?`Watch ad (${S.adsLeft} left)`:'Next ads in <span id="ac"></span>'}</button></div>
+<div class="card"><h3>Tasks: +${c.task} each</h3>${S.tasks.map((t,i)=>{const st=T[t.id],rd=st&&Date.now()-st>=c.wait*1e3;return`<div class="row"><span class="nm">${esc(t.title)}</span><button ${t.done||off?'disabled':''} onclick="task(${i})">${t.done?'Done':rd?'Claim':st?'Wait…':'Start'}</button></div>`}).join('')||'<p class="sm">No tasks yet. Check back soon.</p>'}</div>
+<div class="card"><h3>Add your task${S.admin?' (free for you)':' · '+fmt(c.cost)+' points'}</h3><input id="tt" placeholder="Task title" maxlength="60"><input id="tu" placeholder="https://link" inputmode="url"><button class="w" onclick="addtask()">Submit task</button></div>`;
+  }else h+=(WN===null?'<div class="card sm">Loading…</div>':WN.length?WN.map(r=>`<div class="card"><h3>Round ${r.n} winners</h3>${r.winners.map((x,i)=>`<div class="row ${i<3?'t'+i:''}"><span class="rk">${['🥇','🥈','🥉'][i]||i+1}</span><span class="nm">${esc(x.name)}<i>${x.un?'@'+esc(x.un):''}</i></span><b>${x.usdt} USDT</b></div>`).join('')}</div>`).join(''):'<div class="card sm">No winners yet. Round 1 winners will appear here.</div>')+
+`<div class="card"><h3>How it works</h3><ul class="sm"><li>Rounds run Monday to Friday (UTC). Points reset every round.</li><li>Earn points by inviting friends, watching ads, finishing tasks and checking in daily.</li><li>The top 2 win big USDT prizes. Places 3 to 10 get ${c.top} USDT each.</li><li>Prizes are paid manually in USDT (BEP20). Send your wallet when the bot asks.</li><li>One account per person. Fake accounts or cheating means removal.</li></ul>${c.support?`<br><button class="g w" onclick="go('${esc(c.support)}')">Contact support</button>`:''}</div>`;
+  $('#app').innerHTML=h;tick();
+}
+function tick(){
+  if(!S||S.gate)return;const R=S.R,end=R.active?R.ends:R.next,c=$('#cd'),a=$('#ac');
+  if(c)c.textContent=cd(end-Date.now());if(a)a.textContent=cd(S.adsReset-Date.now());
+  if(!tick.b&&(Date.now()>end+1500||(S.adsLeft===0&&Date.now()>S.adsReset))){tick.b=1;load().finally(()=>setTimeout(()=>tick.b=0,5000))}
+}
+async function ad(){
+  const f=window['show_'+S.cfg.zone];if(!S.cfg.zone||typeof f!=='function')return toast('Ads are not ready yet. Try again soon.',0);
+  try{await f()}catch(e){return toast('Ad not completed. No points given.',0)}
+  try{S=Object.assign(S,await api('ad'));toast('+'+S.gain+' points');draw()}catch(e){toast(e,0)}
+}
+async function checkin(){try{S=Object.assign(S,await api('checkin'));toast('+'+S.gain+' points');draw()}catch(e){toast(e,0)}}
+async function task(i){
+  const t=S.tasks[i],st=T[t.id];
+  try{
+    if(st&&Date.now()-st>=S.cfg.wait*1e3){S=Object.assign(S,await api('task',{id:t.id,step:'claim'}));delete T[t.id];toast('+'+S.gain+' points');return draw()}
+    if(!st){await api('task',{id:t.id,step:'start'});T[t.id]=Date.now();go(t.url);draw();setTimeout(draw,S.cfg.wait*1e3+200)}
+  }catch(e){toast(e,0)}
+}
+async function addtask(){try{await api('addtask',{title:$('#tt').value,url:$('#tu').value});toast(S.admin?'Task added':'Sent for approval');$('#tt').value=$('#tu').value=''}catch(e){toast(e,0)}}
+async function friends(){try{FR=(await api('friends')).friends;draw()}catch(e){toast(e,0)}}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;if(tab==='win')loadWin();draw();window.scrollTo(0,0)});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&(!S||S.gate))load()});
+setInterval(tick,1000);
+setInterval(()=>{if(document.hidden||!S||S.gate)return;lb();if(!(document.activeElement&&document.activeElement.tagName==='INPUT'))api('me').then(r=>{if(r.gate)return load();S=r;draw()}).catch(()=>{})},30000);
+load();lb();
+</script></body></html>
