@@ -1,0 +1,189 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#060a14">
+<title>Leadership USDT</title>
+<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+<script src="https://cdn.tgads.space/assets/js/adexium-widget.min.js"></script>
+<style>
+:root{--bg:#060a14;--s1:#0d1424;--s2:#13203a;--ln:#1f2f52;--ice:#93d5ff;--gold:#fbbf24;--ok:#34d399;--tx:#e8eefc;--mut:#8697bd}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}[hidden]{display:none!important}
+body{background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 14px calc(104px + env(safe-area-inset-bottom));min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(90% 38% at 50% -6%,#1b429a99,transparent 70%),radial-gradient(70% 30% at 100% 100%,#10307055,transparent);z-index:-2}
+body:after{content:"";position:fixed;left:-60%;right:-60%;bottom:0;height:42vh;background:linear-gradient(#3b82f626 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,#3b82f626 1px,transparent 1px) 0 0/44px 44px;transform:perspective(320px) rotateX(64deg);transform-origin:bottom;-webkit-mask-image:linear-gradient(transparent,#000);mask-image:linear-gradient(transparent,#000);z-index:-1;pointer-events:none}
+.top{display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top)) 0 10px}
+.brand{display:flex;gap:10px;align-items:center}.brand b{display:block;font-size:16px}.brand span{font-size:12px;color:var(--mut)}
+.logo{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;font-size:22px;font-weight:900;color:#5a3900;background:linear-gradient(145deg,#ffe58a,#f59e0b);box-shadow:inset 0 1px 0 #fff9,0 4px 0 #a45f06,0 10px 18px #f59e0b44}
+.pill{font-size:12px;font-weight:700;padding:6px 11px;border-radius:99px;background:#111c34;border:1px solid var(--ln);color:var(--mut)}.pill.on{color:var(--ok);border-color:#1d6b55;background:#0b2a26}
+.adbar{min-height:62px;margin:2px 0 14px;text-align:center;overflow:hidden}.adbar span{display:block;font-size:10px;color:#566a94;letter-spacing:.6px;margin-bottom:2px}.adbar iframe{max-width:100%}
+.card{background:linear-gradient(160deg,var(--s2),var(--s1) 75%);border:1px solid var(--ln);border-radius:20px;padding:16px;margin-bottom:14px;box-shadow:inset 0 1px 0 #ffffff14,0 10px 26px #0009}
+.sm{color:var(--mut);font-size:13px}.center{text-align:center}.num{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+h3{font-size:16px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.hero{text-align:center;transform:perspective(900px) rotateX(3deg);transform-origin:50% 100%;background:linear-gradient(155deg,#1c3f9a,#0b1535 72%);border-color:#3b66d8}
+.hero .num{font-size:38px;margin:2px 0 12px;color:var(--ice);text-shadow:0 0 22px #2e7bffaa,0 4px 0 #0a1b4d}
+.coin{width:84px;height:84px;margin:0 auto 10px;position:relative;transform-style:preserve-3d;animation:spin 5s linear infinite}
+.coin i{position:absolute;inset:0;border-radius:50%;display:grid;place-items:center;font:800 38px system-ui;color:#7a5200;font-style:normal;background:radial-gradient(circle at 30% 25%,#fff3b0,#ffcf5a 45%,#c98a14);box-shadow:inset 0 0 0 5px #e6a928,inset 0 0 0 7px #ffe08a,0 10px 30px #ffb70066;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.coin i:nth-child(2){transform:rotateY(180deg)}@keyframes spin{to{transform:rotateY(360deg)}}
+.prz{display:grid;grid-template-columns:1.2fr 1.2fr 1fr;gap:8px;margin-top:12px}
+.prz div{background:linear-gradient(#101c44,#07102b);border:1px solid #243a80;border-radius:14px;padding:10px 2px;font-size:12px;color:var(--mut);box-shadow:inset 0 1px 0 #4a6bd044,0 4px 0 #050b20}
+.prz b{display:block;font-size:16px;color:var(--gold);margin-top:2px}.prz div:nth-child(3) b{color:var(--tx)}
+.bar{height:10px;border-radius:9px;background:#060c1c;box-shadow:inset 0 2px 5px #000;margin:8px 0;overflow:hidden}.bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#2e7bff,#93d5ff);box-shadow:0 0 12px #2e7bff}
+.boost{margin:0 0 14px;padding:12px;border-radius:16px;text-align:center;font-weight:800;color:#3a2600;background:linear-gradient(#ffe08a,#ffb62e);box-shadow:inset 0 1px 0 #fff9,0 5px 0 #a8690a,0 12px 24px #ffb62e55}
+.win{border-color:#8a6a10;background:linear-gradient(160deg,#2a2208,#0d1424)}.mini{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}
+.me{display:flex;justify-content:space-between;align-items:center}.lv{font-weight:800;padding:6px 12px;border-radius:99px;background:#0a1630;border:1px solid #27408f}.gap{margin-top:8px;font-weight:700;color:var(--ice);font-size:14px}
+.pod{display:flex;align-items:flex-end;justify-content:center;gap:8px;margin:6px 0 14px}.pod>div{flex:1;text-align:center;min-width:0}.pod .av{margin:0 auto 4px}
+.pn{font-size:12px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pp{font-size:12px;color:var(--gold);font-weight:800}
+.bk{border-radius:12px 12px 0 0;display:grid;place-items:start center;padding-top:8px;font-size:26px;margin-top:6px;box-shadow:inset 0 2px 0 #fff5,0 6px 0 #0007}
+.p1 .bk{height:96px;background:linear-gradient(#fcd34d,#b45309)}.p2 .bk{height:72px;background:linear-gradient(#e2e8f0,#64748b)}.p3 .bk{height:56px;background:linear-gradient(#fdba74,#9a3412)}
+.row{display:flex;align-items:center;gap:10px;padding:9px 6px;border-bottom:1px solid #111c3b;border-radius:12px}.row:last-child{border:0}.row.you{background:#12306a66;border-color:transparent}
+.rk{width:28px;text-align:center;font-weight:800;color:var(--mut)}
+.av{width:38px;height:38px;border-radius:50%;background:linear-gradient(#4b93ff,#1f56d6);display:grid;place-items:center;font-weight:800;overflow:hidden;flex:none;box-shadow:0 0 0 2px #2e7bff,0 5px 10px #000a}.av img{width:100%;height:100%;object-fit:cover}
+.center .av{margin:0 auto;width:68px;height:68px;font-size:28px}
+.nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nm i{display:block;font-style:normal;color:var(--mut);font-size:12px}
+.goal{display:flex;justify-content:space-between;align-items:center;padding:4px 0}.dots{display:flex;gap:6px;justify-content:space-between}
+.dot{flex:1;height:34px;border-radius:10px;display:grid;place-items:center;font-style:normal;font-size:13px;color:var(--mut);background:#0a1121;border:1px solid var(--ln)}.dot.on{background:#3a2a08;border-color:#8a6a10}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;font-size:11px;color:var(--mut)}.trust b{display:block;color:var(--tx);font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.st{background:linear-gradient(160deg,var(--s2),var(--s1));border:1px solid var(--ln);border-radius:16px;padding:12px}.st b{display:block;font-size:20px}
+button{font:inherit;font-weight:800;border:0;border-radius:14px;padding:12px 16px;color:#fff;cursor:pointer;background:linear-gradient(#4b93ff,#2563e0);box-shadow:inset 0 1px 0 #ffffff66,0 5px 0 #153a8c,0 10px 18px #1d4fd655;transition:transform .08s,box-shadow .08s}
+button:active{transform:translateY(4px);box-shadow:inset 0 1px 0 #ffffff66,0 1px 0 #153a8c}
+button:disabled{background:linear-gradient(#1b2a5c,#141f47);color:var(--mut);box-shadow:0 4px 0 #0a1233;cursor:default}button:disabled:active{transform:none}
+button.g{background:linear-gradient(#1c2f6b,#12214d);color:var(--ice);box-shadow:inset 0 1px 0 #5576d655,0 5px 0 #0a1538}.w{width:100%}.flex{display:flex;gap:10px}.flex>*{flex:1}
+input{width:100%;font:inherit;color:var(--tx);background:#060c1c;border:1px solid var(--ln);border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:inset 0 3px 6px #000a}
+.link{background:#060c1c;border:1px dashed #2a4390;border-radius:12px;padding:10px;font-size:12px;word-break:break-all;margin-bottom:12px;color:var(--ice)}
+details{border-top:1px solid #111c3b;padding:10px 0}details:first-of-type{border:0}summary{font-weight:700;cursor:pointer}details p{color:var(--mut);font-size:14px;margin-top:6px}
+.sk{height:120px;background:linear-gradient(90deg,#0d1424,#16233f,#0d1424);background-size:200% 100%;animation:sh 1.2s infinite}@keyframes sh{to{background-position:-200% 0}}
+nav{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));display:flex;gap:4px;padding:6px;background:linear-gradient(#111d45,#0a1230);border:1px solid #27408f;border-radius:22px;box-shadow:inset 0 1px 0 #5576d655,0 6px 0 #050a1e,0 16px 30px #000c;z-index:5}
+nav button{flex:1;background:none;box-shadow:none;color:var(--mut);font-size:18px;padding:7px 2px;border-radius:16px;line-height:1.2}nav button span{display:block;font-size:10px}
+nav button.on{color:#fff;background:linear-gradient(#3b86ff,#1f56d6);box-shadow:inset 0 1px 0 #fff5,0 3px 0 #123a99}nav button:active{transform:none}
+#toast{position:fixed;left:50%;top:14px;transform:translateX(-50%) translateY(-20px);background:linear-gradient(#3b86ff,#1f56d6);padding:11px 20px;border-radius:14px;font-weight:800;opacity:0;transition:.25s;pointer-events:none;z-index:9;box-shadow:0 5px 0 #123a99,0 14px 24px #000a;max-width:90%;text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%)}#toast.bad{background:linear-gradient(#e0485a,#b32638);box-shadow:0 5px 0 #7d1220,0 14px 24px #000a}
+.splash{display:flex;flex-direction:column;align-items:center;gap:12px;padding:70px 20px;text-align:center}
+.splash b{font-size:22px;letter-spacing:.3px}.splash span{color:var(--mut);font-size:14px}
+.ld{width:180px;height:6px;border-radius:6px;background:#0d1424;overflow:hidden;box-shadow:inset 0 2px 4px #000}
+.ld i{display:block;width:40%;height:100%;border-radius:6px;background:linear-gradient(90deg,#2e7bff,#93d5ff);animation:ld 1.2s ease-in-out infinite}
+@keyframes ld{0%{margin-left:-40%}100%{margin-left:100%}}
+#splash{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:radial-gradient(70% 45% at 50% 52%,#14275a,#060a14 72%);transition:opacity .4s}
+#splash.out{opacity:0;pointer-events:none}
+#splash img{width:124px;height:124px;border-radius:30px;box-shadow:0 0 60px #2e7bff66,0 18px 40px #000a;animation:fl 2.4s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+#splash b{font-size:30px;font-weight:800;letter-spacing:-.5px}#splash span{color:var(--mut);font-size:15px}
+#splash .ld{width:78%;max-width:340px;margin-top:22px}
+@keyframes glow{50%{box-shadow:inset 0 1px 0 #5576d655,0 6px 0 #070e26,0 18px 60px #2e7bff77}}.hero{animation:glow 3.2s ease-in-out infinite}
+@keyframes shim{to{background-position:200% 0}}.prz b{background:linear-gradient(90deg,#ffcf5a,#fff6c2,#ffcf5a) 0 0/200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shim 3s linear infinite}
+@media(prefers-reduced-motion:reduce){#splash img{animation:none}.coin,.sk{animation:none}*{transition:none!important}}
+</style><script src="https://js.onclckvd.com/in-stream-ad-admanager/tma.js"></script>
+</head><body>
+<div id="splash"><img src="/logo.png" alt=""><b>Leadership USDT</b><span id="lt">Loading your earning dashboard…</span><div class="ld"><i></i></div></div>
+<header class="top"><div class="brand"><div class="logo">₮</div><div><b>Leadership USDT</b><span>Win real USDT every week</span></div></div><div class="pill" id="pill">Loading</div></header>
+<div class="adbar"><span>ADVERTISEMENT</span>
+<script>
+  atOptions = {
+    'key' : '7ef370e28880216406d004a9731baa68',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/7ef370e28880216406d004a9731baa68"></script>
+</div>
+<main id="app"></main><div id="toast"></div>
+<nav id="nav" hidden><button data-t="home">🏆<span>Board</span></button><button data-t="earn">⚡<span>Earn</span></button><button data-t="fr">👥<span>Friends</span></button><button data-t="win">💰<span>Winners</span></button><button data-t="me">👤<span>Profile</span></button></nav>
+<script>
+const W=Telegram.WebApp;W.ready();W.expand();try{W.setHeaderColor('#060a14');W.setBackgroundColor('#060a14')}catch(e){}
+const $=q=>document.querySelector(q),fmt=n=>(+n).toLocaleString('en-US'),usd=n=>+(+n).toFixed(2),esc=t=>String(t==null?'':t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let S,LB=[],WN=null,FR=null,tab='home',T={},AX=null,busy=0;
+const LV=[['Bronze','🥉',0],['Silver','🥈',1000],['Gold','🥇',5000],['Platinum','💠',15000],['Diamond','💎',40000]];
+const lvl=p=>{let i=0;LV.forEach((l,k)=>{if(p>=l[2])i=k});return{c:LV[i],n:LV[i+1]}};
+const api=async(a,x={})=>{const r=await fetch('/api/app',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({a,initData:W.initData,...x})}),t=await r.text();let j;try{j=JSON.parse(t)}catch(e){throw 'Server error. Check the Vercel environment variables and redeploy.'}if(j.error)throw j.error;return j};
+const toast=(m,ok=1)=>{const t=$('#toast');t.textContent=m;t.className='on'+(ok?'':' bad');clearTimeout(toast.h);toast.h=setTimeout(()=>t.className='',2400);try{W.HapticFeedback.notificationOccurred(ok?'success':'error')}catch(e){}};
+const cd=ms=>{ms=Math.max(0,ms);const d=ms/864e5|0,h=ms%864e5/36e5|0,m=ms%36e5/6e4|0,s=ms%6e4/1e3|0;return(d?d+'d ':'')+h+'h '+m+'m '+s+'s'};
+const av=p=>`<div class="av">${p.photo?`<img src="${esc(p.photo)}" onerror="this.remove()">`:esc((p.name||'?')[0])}</div>`;
+const go=u=>/^https:\/\/t\.me\//.test(u)?W.openTelegramLink(u):W.openLink(u);
+const bar=v=>`<div class="bar"><i style="width:${Math.max(0,Math.min(100,v||0))}%"></i></div>`;
+const copy=()=>navigator.clipboard.writeText(S.link).then(()=>toast('Link copied')).catch(()=>toast('Copy failed',0));
+const share=()=>W.openTelegramLink('https://t.me/share/url?url='+encodeURIComponent(S.link)+'&text='+encodeURIComponent('Win real USDT every round on Leadership USDT 💎'));
+const notif=()=>{try{W.requestWriteAccess(r=>toast(r?'Bot messages enabled':'Not allowed. Open the bot and press Start',r?1:0))}catch(e){toast('Open the bot and press Start',0)}};
+
+async function load(){
+  try{S=await api('me')}catch(e){$('#nav').hidden=true;$('#app').innerHTML=`<div class="card">${esc(e)}<br><br><button class="w" onclick="load()">Try again</button></div>`;return}
+  if(S.gate){$('#nav').hidden=true;$('#pill').textContent='Join to start';$('#app').innerHTML=`<div class="card hero"><div class="coin"><i>₮</i><i>₮</i></div><div class="num" style="font-size:26px;color:var(--tx)">Join to unlock</div><p class="sm" style="margin:8px 0 16px">Join both channels, then tap Verify.</p>${S.gate.map(c=>`<button class="g w" style="margin-bottom:12px" onclick="W.openTelegramLink('https://t.me/${esc(c.slice(1))}')">Join ${esc(c)}</button>`).join('')}<button class="w" onclick="load()">Verify</button></div>`;return}
+  $('#nav').hidden=false;initAds();
+  try{if(!localStorage.w){localStorage.w=1;W.requestWriteAccess&&W.requestWriteAccess()}}catch(e){}
+  draw();
+}
+async function lb(){try{LB=(await(await fetch('/api/app')).json()).top||[];if(tab==='home')draw()}catch(e){}}
+async function loadWin(){try{WN=(await(await fetch('/api/app?w=1')).json()).rounds||[]}catch(e){WN=[]}if(tab==='win')draw()}
+async function loadFr(){try{FR=(await api('friends')).friends}catch(e){FR=[]}if(tab==='fr')draw()}
+
+let OC=0,OCS=null;
+function initAds(){if(!OC&&S.cfg.oc&&typeof window.initCdTma==='function'){OC=1;try{window.initCdTma({id:S.cfg.oc}).then(f=>{OCS=f}).catch(()=>{OC=0})}catch(e){OC=0}}
+  if(AX||!S.cfg.wid||typeof AdexiumWidget!=='function')return;try{AX=new AdexiumWidget({wid:S.cfg.wid,adFormat:'interstitial'});if(AX.autoMode)AX.autoMode()}catch(e){AX=null}}
+function showOC(){return new Promise((ok,no)=>{if(!OCS)return no('This ad platform is not ready yet. Try again in a moment.');OCS().then(()=>ok()).catch(()=>no('Ad not completed. No points given.'))})}
+function showAd(p){if(p==='b')return showOC();return new Promise((ok,no)=>{
+  if(!AX)return no('Ads are not ready yet. Try again in a moment.');
+  if(!AX.requestAd||!AX.on){toast('Sponsored ad loading. Stay on this screen…');return setTimeout(ok,12000)}
+  let end=0,shown=0,t=setTimeout(()=>fin(0,'No ad available right now. Try again later.'),15000);
+  const fin=(g,m)=>{if(end)return;end=1;clearTimeout(t);g?ok():no(m)};
+  const done=()=>fin(shown&&Date.now()-shown>=4000,'Please watch the ad to the end.');
+  AX.on('adReceived',a=>{clearTimeout(t);shown=Date.now();t=setTimeout(()=>fin(0,'The ad did not finish.'),90000);try{AX.displayAd(a)}catch(e){fin(0,'The ad failed to open.')}});
+  AX.on('noAdFound',()=>fin(0,'No ad available right now. Try again later.'));
+  AX.on('adPlaybackCompleted',done);AX.on('adClosed',done);
+  try{AX.requestAd('interstitial')}catch(e){fin(0,'Ads are not ready yet.')}
+})}
+async function ad(p){if(busy)return;busy=1;try{await showAd(p);S=Object.assign(S,await api('ad',{prov:p==='b'?'b':'a'}));toast('+'+S.gain+' points');draw()}catch(e){toast(e,0)}busy=0}
+async function checkin(){try{S=Object.assign(S,await api('checkin'));toast('+'+S.gain+' points');draw()}catch(e){toast(e,0)}}
+async function task(i){const t=S.tasks[i],st=T[t.id];try{
+  if(st&&Date.now()-st>=S.cfg.wait*1e3){S=Object.assign(S,await api('task',{id:t.id,step:'claim'}));delete T[t.id];toast('+'+S.gain+' points');return draw()}
+  if(!st){await api('task',{id:t.id,step:'start'});T[t.id]=Date.now();go(t.url);draw();setTimeout(draw,S.cfg.wait*1e3+200)}
+}catch(e){toast(e,0)}}
+async function addtask(){try{await api('addtask',{title:$('#tt').value,url:$('#tu').value});toast(S.admin?'Task added':'Sent for approval');$('#tt').value=$('#tu').value=''}catch(e){toast(e,0)}}
+
+function gapTxt(){if(!S.R.n||!LB.length||!S.rank)return'';if(S.rank===1)return'👑 You are #1. Defend your spot!';const a=S.rank<=LB.length?LB[S.rank-2]:(LB.length>=100?LB[99]:null);if(!a)return'';return'🎯 '+fmt(Math.max(1,a.pts-S.pts+1))+(S.rank<=LB.length?' points to reach #'+(S.rank-1):' points to enter the Top 100')}
+function hero(){const R=S.R,P=R.prize,c=S.cfg,off=!R.active,end=off?R.next:R.ends,t0=off?(R.ends||R.start):R.start,pct=R.n?(Date.now()-t0)/(end-t0)*100:0;
+  return `<div class="card hero"><div class="coin"><i>₮</i><i>₮</i></div><div class="sm">Round ${off?R.n+1:R.n} ${off?'starts in':'ends in'}</div><div class="num" id="cd"></div>${R.n?bar(pct):''}<div class="prz"><div>🥇 1st<b>${usd(P[0])} USDT</b></div><div>🥈 2nd<b>${usd(P[1])} USDT</b></div><div>3rd to 10th<b>${usd(c.top)} each</b></div></div><p class="sm" style="margin-top:12px">Total prize pool <b style="color:var(--gold)">${usd(P[0]+P[1]+8*c.top)} USDT</b></p></div>`}
+const mini=()=>{const R=S.R;return `<div class="card mini"><span class="sm">Round ${R.active?R.n:R.n+1} ${R.active?'ends in':'starts in'}</span><b id="cd"></b></div>`};
+const winBox=()=>S.win&&!S.R.active&&S.win.round===S.R.n?`<div class="card win"><b>🏆 You won ${usd(S.win.usdt)} USDT in Round ${S.win.round}!</b><p class="sm" style="margin:6px 0 12px">Send your USDT (BEP20) wallet address to the bot before the next round starts.</p><button class="w" onclick="W.openTelegramLink('https://t.me/${esc(S.cfg.bot)}')">Open bot and send address</button></div>`:'';
+const trust=()=>{const s=S.stats||{},a=s.paid>0,b=s.players>=50;return `<div class="card trust"><div>🔒<b>Secure</b>Telegram login</div><div>💸<b>Real USDT</b>Manual payouts</div><div>📜<b>Proof</b>Public channel</div></div>${a||b?`<p class="sm center" style="margin-top:-6px">${a?'Paid out so far: <b>'+usd(s.paid)+' USDT</b>':''}${a&&b?' · ':''}${b?fmt(s.players)+' players':''}</p>`:''}`};
+
+function vHome(){const L=lvl(S.pts),g=gapTxt(),o=[[1,'p2','🥈'],[0,'p1','🥇'],[2,'p3','🥉']];
+  const pod=LB.length?`<div class="pod">${o.map(([i,k,m])=>{const p=LB[i];return `<div class="${k}">${p?`${av(p)}<div class="pn">${esc(p.name)}</div><div class="pp">${fmt(p.pts)}</div>`:''}<div class="bk">${m}</div></div>`}).join('')}</div>`:'';
+  const rows=LB.slice(3).map((p,k)=>`<div class="row${k+3===S.rank-1?' you':''}"><span class="rk">${k+4}</span>${av(p)}<span class="nm">${esc(p.name)}<i>${p.un?'@'+esc(p.un):''}</i></span><b>${fmt(p.pts)}</b></div>`).join('');
+  return `<div class="card"><div class="me"><div><div class="sm">Your rank</div><div class="num">${S.rank?'#'+S.rank:'–'}</div></div><div class="lv">${L.c[1]} ${L.c[0]}</div><div style="text-align:right"><div class="sm">Your points</div><div class="num">${fmt(S.pts)}</div></div></div>${L.n?bar((S.pts-L.c[2])/(L.n[2]-L.c[2])*100)+`<p class="sm">${fmt(L.n[2]-S.pts)} points to ${L.n[1]} ${L.n[0]}</p>`:'<p class="sm">Top level reached 💎</p>'}${g?`<p class="gap">${g}</p>`:''}</div><div class="card"><h3>🏆 Leaderboard <span class="sm">Top 100</span></h3>${pod}${rows}${LB.length?'':'<p class="sm">No scores yet. Be the first on the board!</p>'}</div>`+trust()}
+function vEarn(){const c=S.cfg,off=!S.R.active,used=c.adMax-S.adsLeft;
+  const goals=[['Check in today',S.ci?1:0,1],['Watch 5 ads',Math.min(5,used),5],['Invite a friend',Math.min(1,S.inv),1]],dn=goals.filter(g=>g[1]>=g[2]).length;
+  return `${off?'<div class="card sm">⏸ Earning is paused until the next round starts.</div>':''}
+<div class="card"><h3>🎯 Daily goals <span class="sm">${dn}/3</span></h3>${goals.map(g=>`<div class="goal"><span>${g[1]>=g[2]?'✅':'⬜'} ${g[0]}</span><span class="sm">${g[1]}/${g[2]}</span></div>${bar(g[1]/g[2]*100)}`).join('')}</div>
+<div class="card"><h3>📅 Daily check-in <span class="sm">+${c.ci} or more</span></h3><div class="dots">${[0,1,2,3,4,5,6].map(i=>`<i class="dot${i<S.streak?' on':''}">${i<S.streak?'🔥':i+1}</i>`).join('')}</div><p class="sm" style="margin:10px 0">Streak: ${S.streak} day${S.streak==1?'':'s'}. A longer streak gives a bigger bonus.</p><button class="w" onclick="checkin()" ${off||S.ci?'disabled':''}>${S.ci?'✓ Checked in today':'Check in'}</button></div>
+<div class="card"><h3>🎬 Watch ads <span class="sm">+${c.ad} each</span></h3>${S.adsLeft?'':'<p class="sm">Next ads in <span id="ac"></span></p><br>'}<div style="display:flex;gap:10px"><button style="flex:1" onclick="ad('a')" ${off||!S.leftA?'disabled':''}>Platform 1<br><small>${S.leftA} left</small></button>${c.oc?`<button style="flex:1" onclick="ad('b')" ${off||!S.leftB?'disabled':''}>Platform 2<br><small>${S.leftB} left</small></button>`:''}</div></div>
+<div class="card"><h3>✅ Tasks <span class="sm">+${c.task} each</span></h3>${S.tasks.map((t,i)=>{const st=T[t.id],rd=st&&Date.now()-st>=c.wait*1e3;return `<div class="row"><span class="nm">${esc(t.title)}</span><button ${t.done||off?'disabled':''} onclick="task(${i})">${t.done?'Done':rd?'Claim':st?'Wait…':'Start'}</button></div>`}).join('')||'<p class="sm">No tasks yet. Check back soon.</p>'}</div>
+<div class="card"><h3>➕ Add your task</h3><p class="sm" style="margin-bottom:10px">${S.admin?'Free for you.':fmt(c.cost)+' points. Reviewed before going live.'}</p><input id="tt" placeholder="Task title" maxlength="60"><input id="tu" placeholder="https://link" inputmode="url"><button class="w" onclick="addtask()">Submit task</button></div>`}
+function vFr(){const c=S.cfg,ms=Object.entries(c.ms).map(([k,v])=>[+k,v]).sort((a,b)=>a[0]-b[0]),nx=ms.find(m=>m[0]>S.inv);
+  return `<div class="card"><h3>👥 Invite and earn <span class="sm">+${c.inv} each</span></h3><div class="link">${esc(S.link)}</div><div class="flex"><button onclick="copy()">Copy link</button><button class="g" onclick="share()">Share</button></div><p class="sm" style="margin-top:12px">${S.inv} friend${S.inv==1?'':'s'} joined this round. No limit on invites!</p></div>
+<div class="card"><h3>🎁 Milestone bonuses</h3>${bar(nx?S.inv/nx[0]*100:100)}${ms.map(([n,b])=>`<div class="goal"><span>${S.inv>=n?'✅':'🔒'} ${n} friends</span><b style="color:var(--gold)">+${fmt(b)}</b></div>`).join('')}</div>
+<div class="card"><h3>Your friends</h3>${FR===null?'<p class="sm">Loading…</p>':FR.length?FR.map(f=>`<div class="row"><span class="nm">${esc(f.name)}</span><span class="sm">${f.ver?'Verified +'+f.pts:'Pending'}</span></div>`).join(''):'<p class="sm">No invites yet. Share your link to start earning!</p>'}</div>`}
+function vWin(){const c=S.cfg;
+  return `<div class="card"><h3>📈 Prize ladder</h3>${S.ladder.map((l,i)=>`<div class="goal"><span>Round ${l.n}${i==0?' <span class="sm">'+(S.R.active?'(now)':'(next)')+'</span>':''}</span><b style="color:var(--gold)">${usd(l.p[0])} / ${usd(l.p[1])} USDT</b></div>`).join('')}<p class="sm" style="margin-top:8px">Places 3 to 10 get ${usd(c.top)} USDT each. ${c.grow?'Prizes grow every round.':'Same big prizes every round.'}</p></div>
+${WN===null?'<div class="card sm">Loading winners…</div>':WN.length?WN.map(r=>`<div class="card"><h3>🏁 Round ${r.n} winners</h3>${r.winners.map((x,i)=>`<div class="row"><span class="rk">${i+1}</span><span class="nm">${esc(x.name)}<i>${x.un?'@'+esc(x.un):''}</i></span><b>${usd(x.usdt)} USDT</b></div>`).join('')}</div>`).join(''):'<div class="card sm">No winners yet. Round 1 winners will appear here.</div>'}
+<div class="card"><h3>❓ FAQ</h3><details><summary>How do I win?</summary><p>Finish in the top places when the round ends on Friday. Points come from invites, ads, tasks and daily check-ins.</p></details><details><summary>When do rounds run?</summary><p>The launch round runs Friday Oct 30 to Friday Nov 6. After that, every round runs Monday 00:00 to Saturday 00:00 (UTC). The weekend is a countdown to the next round, and points reset every round.</p></details><details><summary>How do I get paid?</summary><p>Winners get a message from the bot. Reply with your USDT (BEP20) address before the next round starts. Every payment is posted in our proof channel.</p></details><details><summary>Why was I removed?</summary><p>Fake accounts, multiple accounts and cheating are not allowed. Flagged users are hidden until reviewed.</p></details></div>
+<div class="card"><button class="w g" onclick="go('https://t.me/${esc(c.proof)}')">📜 See payment proof</button>${c.support?`<div style="height:10px"></div><button class="w g" onclick="go('${esc(c.support)}')">💬 Contact support</button>`:''}</div>`}
+function vMe(){const u=(W.initDataUnsafe||{}).user||{},L=lvl(S.pts),dn=S.tasks.filter(t=>t.done).length;
+  return `<div class="card center">${av({photo:u.photo_url,name:S.name})}<h3 style="margin:10px 0 2px;justify-content:center">${esc(S.name)}</h3><p class="sm">ID ${esc(u.id||'')} · ${L.c[1]} ${L.c[0]}</p></div>
+<div class="grid"><div class="st"><span class="sm">Points</span><b>${fmt(S.pts)}</b></div><div class="st"><span class="sm">Rank</span><b>${S.rank?'#'+S.rank:'–'}</b></div><div class="st"><span class="sm">Friends</span><b>${S.inv}</b></div><div class="st"><span class="sm">Ads watched</span><b>${S.adsAll}</b></div><div class="st"><span class="sm">Tasks done</span><b>${dn}</b></div><div class="st"><span class="sm">Streak</span><b>${S.streak} 🔥</b></div></div>
+<div class="card" style="margin-top:14px"><h3>🔔 Notifications</h3><p class="sm" style="margin-bottom:10px">Get a bot message for every reward, invite and round update.</p><button class="w" onclick="notif()">Allow bot messages</button></div>`+trust()}
+function draw(){
+  if(!S||S.gate)return;const R=S.R,p=$('#pill');p.textContent=R.active?'● LIVE · Round '+R.n:R.n?'Break · next round soon':'Starts soon';p.className='pill'+(R.active?' on':'');
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t===tab));
+  $('#app').innerHTML=(tab==='home'?hero():mini())+(S.boost?`<div class="boost">⚡ ${S.cfg.bx}x points are live. Final hours, earn now!</div>`:'')+winBox()+({home:vHome,earn:vEarn,fr:vFr,win:vWin,me:vMe}[tab])();tick();
+}
+function tick(){if(!S||S.gate)return;const R=S.R,end=R.active?R.ends:R.next,c=$('#cd'),a=$('#ac');
+  if(c)c.textContent=cd(end-Date.now());if(a)a.textContent=cd(S.adsReset-Date.now());
+  if(!tick.b&&(Date.now()>end+1500||(S.adsLeft===0&&Date.now()>S.adsReset))){tick.b=1;load().finally(()=>setTimeout(()=>tick.b=0,5000))}}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;if(tab==='fr'){FR=null;loadFr()}if(tab==='win'){WN=null;loadWin()}draw();window.scrollTo(0,0)});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&(!S||S.gate))load()});
+setInterval(tick,1000);
+setInterval(()=>{if(document.hidden||!S||S.gate)return;lb();if(!(document.activeElement&&document.activeElement.tagName==='INPUT'))api('me').then(r=>{if(r.gate)return load();S=r;draw()}).catch(()=>{})},30000);
+const hideSplash=()=>{const e=$('#splash');if(e){e.classList.add('out');setTimeout(()=>e.remove(),450)}};
+const _load=load;load=async()=>{try{await _load()}finally{hideSplash()}};
+setTimeout(()=>{const t=$('#lt');if(t)t.textContent='Slow connection. Still loading…'},8000);
+load();lb();
+</script></body></html>
